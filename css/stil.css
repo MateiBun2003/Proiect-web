@@ -1,0 +1,136 @@
+* {
+    margin:  auto;
+    color: #FFEB54;	 
+    }
+    #div1{
+        display:none;
+    }
+    #continut option,select,input {
+        color: black;
+    }
+    #autentificare{	
+        height: 50px;
+        margin-left: 28% ;
+        margin-right: 488;
+        width: 512px;
+        left:0;
+        font-size:30px;
+        text-align: center;
+    }
+    #autentificare a:link ,a:visited  {
+        color:  #F59D2F;
+    }
+    #autentificare a:hover {
+        color: yellow;
+    
+    }   
+    #admin {
+        font-size: medium;
+    }
+    #logo {
+        margin-left:34%;
+    
+    }
+    #logo a img{
+        height:250px;
+        width: 600px;
+    }
+   
+  
+    html, body {
+        height: 100%;
+        width:100%;
+        background-image: url("../Images/paper.jpg");
+        background-size:cover;
+        background-repeat: repeat-y;
+    }
+    
+    #box-meniu {
+        background-color: #726E6D;
+        left:80%;
+        float: left;
+        width:600px;
+        margin-left: 33.4%;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    #list-meniu li{
+        list-style-type: none;
+        display:inline-block;
+        width: 120px;
+        margin-bottom: 1px;
+        margin-top: 1px;
+        margin-left: 10px;
+        margin-right:10px;
+    }
+    
+    #list-meniu {
+        margin: 0;
+        padding: 0;
+    }
+
+    #list-meniu li a:link{
+        text-decoration: none;
+        display: block;
+        font-weight: bold;
+        border: 1px solid black ;
+        background-color: #091B7E;
+        border-radius: 5px;
+        color: white;
+        padding: 3px 10px;
+    }
+
+    #list-meniu li a:visited {
+        display: block;
+        font-weight: bold;
+        border: 1px solid black ;
+        background-color: #091B7E;
+        border-radius: 5px;
+        color: yellow;
+        padding: 3px 10px;
+    }
+
+    #list-meniu li a:hover{
+        display: block;
+        font-weight: bold;
+        color: #091B7E ;
+        border: 1px solid black;
+        background-color:#D2B700;
+        border-radius: 5px;
+        padding: 3px 10px;
+    }
+
+    #list-meniu li ul{
+        display: none;
+        position: absolute;
+        padding: 0;
+        width: 122px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    #continut{	
+        clear: left;
+        color: yellow;
+        margin-left: 12%;	
+        font-size:30px;
+        text-align: left;
+        line-height:50px; 	
+        height:100%;
+        margin-bottom:100px;
+        
+    }
+    
+    #footer{
+        width:100%;
+        clear:  both;
+        position:fixed;
+        bottom:0;
+        background-color:white;
+        color: black;
+        font-size:30px;
+    }
+   
+ 
+   
