@@ -1,49 +1,77 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <title>Site despre masini</title>
-        <link href="css/stil.css" rel="stylesheet" type="text/css" />
-        
-    
-    </head>
-    
-    <body>
-        <div id="wrapper">
-            <div id="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Logo">
-                </a>
-            </div>
-            <div id="box-meniu">
-                <ul id="list-meniu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="masini.html">Masini</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="autentificare.html">Autentificare</a>
-                        <ul>
-                            <li><a href="login.html">Log In</a></li>
-                            <li><a href="cont_nou.html">Cont Nou</a></li>
-                        </ul>
-                    </li>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Contact</title>
+    <link href="css/stil.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div id="box-meniu">
+            <ul id="list-meniu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="masini.html">Masini</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="autentificare.html">Autentificare</a>
+                    <ul>
+                        <li><a href="login.html">Log In</a></li>
+                        <li><a href="cont_nou.html">Cont Nou</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+            <!-- Detalii de contact -->
+            <div class="contact-info">
+                <h2>Contactează-ne</h2>
+                <p>Pentru orice întrebări sau solicitări, te rugăm să ne contactezi folosind detaliile de mai jos:</p>
+                
+                <ul>
+                    <li>Adresă: Strada Exemplu, Nr. 123, Apartamentul 45, Blocul A, Sectorul 1, București, România, Cod Poștal 010101</li>
+                    <li>Telefon: <a href="tel:0756321354">0756 321 354</a></li>
+                    <li>Email: <a href="mailto:contact@example.com">contact@example.com</a></li>
                 </ul>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div id="continut"> 
-                <br/>
-                <div>Ne puteti gasi la:  </div>
-                <div>mail: something@mail.com </div>
-                <div>tel: 0756321354</div>
-                <div>Sau la adresa: </div>
-                <div>Sibiu, str Faxului, nr. 234</div>
-            </div>
-            <div id="footer">
-                
-                <a href="http://csac.ulbsibiu.ro/"><img   src="images/csac.png" alt="csac"></a>&copy; Bunea Matei 2024 &nbsp;
+        
+            <div class="contact-form">
+                <h2>Trimite-ne un mesaj</h2>
+                <form action="mesaj.php" method="POST">
+                    <label for="nume">Nume:</label>
+                    <input type="text" id="nume" name="nume" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="mesaj">Mesaj:</label>
+                    <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+                    
+                    <button type="submit">Trimite</button>
+                </form>
+            </div> 
+        
+            <div class="map">
+                <h2>Locație</h2>
+                <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435341.3672455939!2d-84.38673703241346!3d33.78130648070803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5045d69900271%3A0x5b1507b65bc934b9!2sAtlanta%2C%20GA%2C%20USA!5e0!3m2!1sen!2sro!4v1639513122280!5m2!1sen!2sro" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
-    </body>
+    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="footer">
+            <a href="http://csac.ulbsibiu.ro/"><img   src="images/csac.png" alt="csac"></a>&copy; Bunea Matei 2024 &nbsp;
+        </div>
+    </div>
+<script src = "pagina_contact.js" nonce="Matei Bunea"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
 </html>

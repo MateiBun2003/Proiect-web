@@ -1,133 +1,393 @@
 *{
-    margin:  auto;
-    color: #FFEB54;	 
-    }
-   
-    #continut option,select,input {
-        color: black;
-    }
-    #autentificare{	
-        height: 50px;
-        margin-left: 28% ;
-        margin-right: 488;
-        width: 512px;
-        left:0;
-        font-size:30px;
-        text-align: center;
-    }
-    #autentificare a:link ,a:visited  {
-        color:  #F59D2F;
-    }
-    #autentificare a:hover {
-        color: yellow;
-    
-    }
-    #admin {
-        font-size: medium;
-    }
-    #logo {
-        margin-left:34%;
-    }
-    #logo a img{
-        height:250px;
-        width: 600px;
-    }
+margin:  auto;
+color: #FFEB54;	 
+}
 
-    #continut{	
-        clear: left;
-        color: yellow;
-        margin-left: 12%;	
-        font-size:30px;
-        text-align: left;
-        line-height:50px; 	
-        height:100%;
-        margin-bottom:100px;
-    
-    }
+#autentificare{	
+	height: 50px;
+	margin-left: 28% ;
+	margin-right: 488;
+	width: 512px;
+	left:0;
+	font-size:30px;
+	text-align: center;
+}
 
-    #footer{
-        width:100%;
-        clear:  both;
-        position:fixed;
-        bottom:0;
-        background-color:white;
-        color: black;
-        font-size:30px;
-    }
+#autentificare a:hover {
+	color: yellow;
 
-    html, body {
-        height: 100%;
-        width:100%;
-        background-image: url("../images/paper.jpg");
-        background-size:cover;
-        background-repeat: repeat-y;
+}
+
+#admin {
+	font-size: medium;
+}
+
+#logo {
+    margin: 20px auto; /* Margini automate pentru a centra logo-ul */
+    text-align: center; /* Alinierea textului la centru */
+}
+
+#logo a img{
+	height:216px;
+	width: 500px;
+}
+
+#continut{	
+	clear: left;
+	color: rgb(0, 0, 0);
+	margin-left: 12%;	
+	font-size:30px;
+	text-align: left;
+	line-height:50px; 	
+	height:100%;
+	margin-bottom:100px;
+
+}
+
+#insert {
+margin-left:26%;
+}
+
+#footer{
+	width:100%;
+	clear:  both;
+	position:fixed;
+	bottom:0;
+	background-color:white;
+	color: black;
+	font-size:30px;
+}
+
+html, body {
+    height: 100%;
+	width:100%;
+	background-image: url("../Images/paper.jpg");
+	background-size:cover;
+	background-repeat: repeat-y;
+}
+
+#box-meniu {
+	position: relative;
+	top: 10px;
+	background-color: #726E6D;
+	left:50%;
+	float: left;
+	width:572px;
+	margin-left: -15%;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#list-meniu li{
+	list-style-type: none;
+	display:inline-block;
+	width: 120px;
+	margin-bottom: 1px;
+	margin-top: 1px;
+	margin-left: 10px;
+	margin-right:10px;
+}
+
+#list-meniu {
+margin: 0;
+padding: 0;
+}
+
+#list-meniu li a:link{
+text-decoration: none;
+display: block;
+font-weight: bold;
+border: 1px solid black ;
+background-color: #091B7E;
+border-radius: 5px;
+color: white;
+padding: 3px 10px;
+}
+
+#list-meniu li a:visited {
+display: block;
+font-weight: bold;
+border: 1px solid black ;
+background-color: #091B7E;
+border-radius: 5px;
+color: rgb(196, 250, 0);
+padding: 3px 10px;
+}
+
+#list-meniu li a:hover{
+display: block;
+font-weight: bold;
+color: #091B7E ;
+border: 1px solid black;
+background-color:#D2B700;
+border-radius: 5px;
+padding: 3px 10px;
+}
+
+#list-meniu li ul{
+    display: none;
+    position: absolute;
+	padding: 0;
+	width: 122px;
+	margin-bottom: 0px;
+	margin-top: 0px;	
+}
+
+#list-meniu li ul li{
+	margin: 0px;	
+}
+
+#list-meniu li:hover ul{
+        display: block; 
+		position: absolute;
+}
+
+#login {
+	margin-left:30px;
+	border:0px;
+}
+
+.buton:enabled{
+	background-color:#091B7E;
+	margin:20px;
+	margin-left:25px;
+	border-color:grey;
+	border-style:solid;
+	border-width:2px;
+	color: white;
+	font-family: Verdana, Arial;
+	font-size:20px;
+	font-weight:bold;
+	width:100px;height:35px;
+}
+
+
+.buton:disabled{
+	background-color:#E5E4E2;
+	margin:20px;
+	margin-left:25px;
+	border-color:grey;
+	border-style:solid;
+	border-width:2px;
+	color: black;
+	font-family: Verdana, Arial;
+	font-size:20px;
+	font-weight:bold;
+	width:100px;height:35px;
+}
+
+.buton1 {
+	background-color:#091B7E;
+	margin:20px;
+	margin-left:10px;
+	border-color:grey;
+	border-style:solid;
+	border-width:2px;
+	color: white;
+	font-family: Verdana, Arial;
+	font-size:20px;
+	font-weight:bold;
+	width:260px;height:35px;
+}
+
+@media screen and (max-width: 600px) {
+    #logo a img {
+        width: 100%;
+        max-width: 300px;
     }
-    
-    #box-meniu {
-        background-color: #726E6D;
-        left:80%;
-        float: left;
-        width:600px;
-        margin-left: 34.4%;
-        text-align: center;
-        border-radius: 10px;
+    .buton,
+    .buton1 {
+        max-width: 200px; /* Reducem lățimea maximă pentru butoane */
     }
-    
-    #list-meniu li{
-        list-style-type: none;
-        display:inline-block;
-        width: 120px;
-        margin-bottom: 1px;
-        margin-top: 1px;
-        margin-left: 10px;
-        margin-right:10px;
-    }
-    
-    #list-meniu {
-    margin: 0;
+}
+
+#marci-btn{
+background-color: #091B7E;
+color: white;
+border: 2px solid #091B7E;
+border-radius: 5px;
+padding: 10px 20px;
+font-size: 16px;
+margin: 5px;
+cursor: pointer;
+transition: background-color 0.3s, color 0.3s;
+width: 150px; /* Adăugăm această proprietate pentru a fixa lățimea butoanelor */
+box-sizing: border-box;
+}
+#marci-btn:hover{
+background-color: #D2B700;
+color: #091B7E;
+}
+
+/* Adăugăm stilizarea pentru tabel */
+/* Stiluri pentru tabel */
+.marca-table {
+    width: 75%; /* Lățimea tabelului */
+    margin: 20px auto; /* Margini pentru centrat */
+    border-collapse: collapse; /* Suprapunerea liniilor de graniță */
+    margin-left: 5%; /* Marginea stângă pentru alinierea la stânga */
+	border: 2px solid black; /* Adaugă o bordură de 2px solid negru */
+}
+
+
+/* Stilizăm antetul tabelului */
+.marca-table th {
+    background-color: #091B7E; /* Culoarea fundalului antetului */
+    color: white; /* Culoarea textului antetului */
+    font-weight: bold; /* Text îngroșat */
+    padding: 10px; /* Spațiu între text și marginile celulei */
+    text-align: left; /* Aliniere la stânga */
+}
+
+/* Stilizăm celulele din tabel pentru a avea text negru */
+.marca-table td {
+    border: 1px solid #091B7E; /* Linii de delimitare între celule */
+    padding: 8px; /* Spațiu între text și marginile celulei */
+    text-align: left; /* Aliniere la stânga */
+    color: black; /* Schimbăm culoarea textului în negru */
+}
+
+
+/* Stilizăm rândurile pare din tabel */
+.marca-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Culoare de fundal pentru rândurile pare */
+}
+
+/* Stilizăm hover-ul pe rândurile tabelului */
+.marca-table tr:hover {
+    background-color: #D2B700; /* Schimbăm culoarea de fundal la hover */
+    color: #091B7E; /* Schimbăm culoarea textului la hover */
+}
+
+
+/* Stil pentru butonul de detalii */
+.btn-detalii {
+    background-color: #4CAF50; /* Culoarea de fundal a butonului */
+    border: none; /* Elimină conturul butonului */
+    color: white; /* Culoarea textului butonului */
+    padding: 8px 12px; /* Dimensiunile butonului */
+    text-align: center; /* Alinierea textului în buton */
+    text-decoration: none; /* Elimină sublinierea textului */
+    display: inline-block; /* Așezarea butonului în linie cu conținutul */
+    font-size: 16px; /* Dimensiunea fontului */
+    margin: 4px 2px; /* Spațiile exterioare ale butonului */
+    cursor: pointer; /* Cursor de mână la trecerea peste buton */
+    border-radius: 4px; /* Rotunjirea marginilor butonului */
+}
+
+/* Stiluri pentru secțiunea de informații de contact */
+.contact-info {
+    width: calc(33.33% - 40px); /* Aproximativ 1/3 din lățimea ecranului, cu margini stânga-dreapta */
+    margin: 20px;
+    padding: 20px;
+    background-color: #091B7E; /* Albastru închis */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    color: #000; /* Paragraful este negru */
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+    color: #000; /* Textul este negru */
+}
+
+.contact-info ul {
+    list-style-type: none;
     padding: 0;
-    }
-    
-    #list-meniu li a:link{
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    color: #000; /* Textul este negru */
+}
+
+.contact-info a {
+    color: #333;
     text-decoration: none;
-    display: block;
-    font-weight: bold;
-    border: 1px solid black ;
-    background-color: #091B7E;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #666;
+}
+
+/* Stiluri pentru formularul de contact */
+.contact-form {
+    width: calc(33.33% - 40px); /* Aproximativ 1/3 din lățimea ecranului, cu margini stânga-dreapta */
+    margin: 20px;
+    padding: 20px;
+    background-color: #091B7E; /* Albastru închis */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stilurile pentru secțiunile de contact */
+.contact-info, .contact-form, .map {
+    width: 30%; /* Lățime fixă pentru secțiuni */
+    margin: 40px auto; /* Margini stânga și dreapta automate pentru a centra secțiunile și spațiu de sus mai mare */
+    padding: 20px;
+    background-color: #7486ec70; /* Albastru închis */
+    border-radius: 10px;
+    color: #000; /* Textul este negru */
+    text-align: left; /* Aliniere la stânga */
+    box-shadow: none; /* Fără umbre */
+}
+
+/* Stiluri pentru h2 */
+.contact-info h2, .contact-form h2, .map h2 {
+    margin-bottom: 10px;
+    color: #000; /* Textul este negru */
+}
+
+/* Stilurile pentru listă */
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    color: #000; /* Textul este negru */
+}
+
+/* Stilurile pentru linkuri */
+.contact-info a {
+    color: #000; /* Textul este negru */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #666; /* Schimbarea culorii la survol */
+}
+
+/* Stilurile pentru input-uri, textarea și buton */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    color: white;
-    padding: 3px 10px;
-    }
-    
-    #list-meniu li a:visited {
-    display: block;
-    font-weight: bold;
-    border: 1px solid black ;
-    background-color: #091B7E;
+    color: #000; /* Textul este negru */
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
     border-radius: 5px;
-    color: yellow;
-    padding: 3px 10px;
-    }
-    
-    #list-meniu li ul{
-            display: none;
-            position: absolute;
-            padding: 0;
-            width: 122px;
-            margin-bottom: 0px;
-            margin-top: 0px;
-    }
+    cursor: pointer;
+}
 
-    #list-meniu li ul li{
-        margin: 0px;		
-    }
+.contact-form button:hover {
+    background-color: #555;
+}
+.map {
+    margin-top: 40px; /* Adăugăm o margine superioară pentru a crea un spațiu între secțiunea de locație și footer */
+}
 
-    #list-meniu li:hover ul{
-            display: block; 
-            position: absolute;
-    }
-
-    #login {
-        margin-left:80px;
-        border:0px;
-    }
