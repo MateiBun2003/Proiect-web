@@ -200,120 +200,7 @@ padding: 3px 10px;
         max-width: 200px; /* Reducem lățimea maximă pentru butoane */
     }
 }
-
-#marci-btn{
-background-color: #091B7E;
-color: white;
-border: 2px solid #091B7E;
-border-radius: 5px;
-padding: 10px 20px;
-font-size: 16px;
-margin: 5px;
-cursor: pointer;
-transition: background-color 0.3s, color 0.3s;
-width: 150px; /* Adăugăm această proprietate pentru a fixa lățimea butoanelor */
-box-sizing: border-box;
-}
-#marci-btn:hover{
-background-color: #D2B700;
-color: #091B7E;
-}
-
-/* Adăugăm stilizarea pentru tabel */
-/* Stiluri pentru tabel */
-.marca-table {
-    width: 75%; /* Lățimea tabelului */
-    margin: 20px auto; /* Margini pentru centrat */
-    border-collapse: collapse; /* Suprapunerea liniilor de graniță */
-    margin-left: 5%; /* Marginea stângă pentru alinierea la stânga */
-	border: 2px solid black; /* Adaugă o bordură de 2px solid negru */
-}
-
-
-/* Stilizăm antetul tabelului */
-.marca-table th {
-    background-color: #091B7E; /* Culoarea fundalului antetului */
-    color: white; /* Culoarea textului antetului */
-    font-weight: bold; /* Text îngroșat */
-    padding: 10px; /* Spațiu între text și marginile celulei */
-    text-align: left; /* Aliniere la stânga */
-}
-
-/* Stilizăm celulele din tabel pentru a avea text negru */
-.marca-table td {
-    border: 1px solid #091B7E; /* Linii de delimitare între celule */
-    padding: 8px; /* Spațiu între text și marginile celulei */
-    text-align: left; /* Aliniere la stânga */
-    color: black; /* Schimbăm culoarea textului în negru */
-}
-
-
-/* Stilizăm rândurile pare din tabel */
-.marca-table tr:nth-child(even) {
-    background-color: #f2f2f2; /* Culoare de fundal pentru rândurile pare */
-}
-
-/* Stilizăm hover-ul pe rândurile tabelului */
-.marca-table tr:hover {
-    background-color: #D2B700; /* Schimbăm culoarea de fundal la hover */
-    color: #091B7E; /* Schimbăm culoarea textului la hover */
-}
-
-
-/* Stil pentru butonul de detalii */
-.btn-detalii {
-    background-color: #4CAF50; /* Culoarea de fundal a butonului */
-    border: none; /* Elimină conturul butonului */
-    color: white; /* Culoarea textului butonului */
-    padding: 8px 12px; /* Dimensiunile butonului */
-    text-align: center; /* Alinierea textului în buton */
-    text-decoration: none; /* Elimină sublinierea textului */
-    display: inline-block; /* Așezarea butonului în linie cu conținutul */
-    font-size: 16px; /* Dimensiunea fontului */
-    margin: 4px 2px; /* Spațiile exterioare ale butonului */
-    cursor: pointer; /* Cursor de mână la trecerea peste buton */
-    border-radius: 4px; /* Rotunjirea marginilor butonului */
-}
-
-/* Stiluri pentru secțiunea de informații de contact */
-.contact-info {
-    width: calc(33.33% - 40px); /* Aproximativ 1/3 din lățimea ecranului, cu margini stânga-dreapta */
-    margin: 20px;
-    padding: 20px;
-    background-color: #091B7E; /* Albastru închis */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info p {
-    color: #000; /* Paragraful este negru */
-}
-
-.contact-info h2 {
-    margin-bottom: 10px;
-    color: #000; /* Textul este negru */
-}
-
-.contact-info ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.contact-info ul li {
-    margin-bottom: 10px;
-    color: #000; /* Textul este negru */
-}
-
-.contact-info a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-info a:hover {
-    color: #666;
-}
-
+    
 /* Stiluri pentru formularul de contact */
 .contact-form {
     width: calc(33.33% - 40px); /* Aproximativ 1/3 din lățimea ecranului, cu margini stânga-dreapta */
@@ -391,3 +278,9 @@ color: #091B7E;
     margin-top: 40px; /* Adăugăm o margine superioară pentru a crea un spațiu între secțiunea de locație și footer */
 }
 
+
+/* Stiluri pentru carduri */
+.card {
+    width: 14rem; /* Lățime mai mică pentru carduri */
+    margin-bottom: 20px; /* Spațiere între carduri */
+}

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Mărci de Mașini</title>
     <link rel="stylesheet" type="text/css" href="css/stil.css">
-</head> 
-<body>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
     <div id="wrapper">
         <div id="logo">
             <a href="index.html">
@@ -21,28 +22,19 @@
                     <ul>
                         <li><a href="login.html">Login</a></li>
                         <li><a href="cont_nou.html">Cont Nou</a></li>
-                    </ul>   
+                    </ul>
                 </li>
             </ul>
         </div>
-            <div id="continut"> 
-                <br/>
-                <h2>Alege marca de mașină:</h2>
-                <div id="detalii-masina"></div>
-                <button type="button" id="marci-btn">Toate marcile </button>
-                <!--<button type="button" id="mercedes-btn">Mercedes</button>
-                <button type="button" id="bmw-btn">BMW</button>
-                <button type="button" id="audi-btn">Audi</button>
-                <button type="button" id="volkswagen-btn">Volkswagen</button>
-                <button type="button" id="ford-btn">Ford</button>-->
-                <div id="results"></div>
-        </div>
-        
+        <div id="continut">
+            <br/>
+            <button id="load-cars-btn" class="btn btn-primary mb-3">Încarcă Mașini</button>
+            <div id="car-cards" class="row"></div>
         </div>
         <div id="footer">
             <a href="http://csac.ulbsibiu.ro/"><img src="Images/csac.png" alt="csac"></a>&copy; Bunea Matei 2024 &nbsp;
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" nonce="Matei Bunea"></script>
 </body>
 </html>
