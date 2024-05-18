@@ -18,7 +18,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="masini.html">Masini</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="autentificare.html">Autentificare</a>
+                    <li><a href="#">Autentificare</a>
                         <ul>
                             <li><a href="login.html">Login</a></li>
                             <li><a href="cont_nou.html">Cont Nou</a></li>
@@ -34,40 +34,43 @@
                             <td>
                                 <b>Username:</b>
                             </td>
-                            <td><input type="text" name="userid1"></input></td>
+                            <td><input type="text" id="username"></input></td>
                         </tr>
                         <tr>
                             <td><b>Password: </b></td>
-                            <td><input type="password" name="password1"></input></td>
+                            <td><input type="password" id="password"></input></td>
                         </tr> 
                         <tr>
-                            <td><b>Re-type: </b></td>
-                            <td><input type="password" name="password2"></input></td>
+                            <td><b>Email: </b></td>
+                            <td><input type="email" id="email"></input></td>
                         </tr>
                         <tr>
                             <td><b>Nume: </b></td>
-                            <td><input type="text" name="nume" id="namel"></input></td>
+                            <td><input type="text" id="name"></input></td>
                         </tr>
                         <tr>
                             <td><b>Prenume: </b></td>
-                            <td><input type="text" name="prenume"></input></td>
+                            <td><input type="text" id="surname"></input></td>
                         </tr>
-                        <tr>
-                            <td><label >Cod Admin:</label></td>
-                            <td><input type="text" name="cod"></input></td>
-                        </tr>
-                        <tr>
-                            <td><input type="submit" value="Submit" class="buton"></input></td>
-                            <td><input type="reset" value="Reset" class="buton"></input></td>
-                        </tr>
+                            
                     </table>
+                    
                 </form>
+                <button id="registerButton" class="btn btn-primary mb-3">Register</button>
+                <button id="reset">Reset</button>
             </div>
+            
             <div>
                 <div id="footer">
                     <a href = "http://csac.ulbsibiu.ro/" ><img   src="Images/csac.png" alt="csac"></a>&copy; Bunea Matei 2024 &nbsp;
                 </div>
             </div>
         </div>
+
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js" nonce="Matei Bunea"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js" nonce="Matei Bunea"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js" nonce="Matei Bunea"></script>
+        <script src="firebaseSetUp.js" nonce="Matei Bunea"></script>
     </body>
+
 </html>

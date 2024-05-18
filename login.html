@@ -1,68 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Site despre masini</title>
-    <link href="css/stil.css" rel="stylesheet" type="text/css" />
-</head>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Site despre masini</title>
+        <link href="css/stil.css" rel="stylesheet" type="text/css" />
+    </head>
 
-<body>
-    <div id="wrapper">
-        <div id="logo">
-            <a href="index.html">
-                <img src="images/logo.png" alt="Logo">
-            </a>
+    <body>
+        <div id="wrapper">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div id="box-meniu">
+                <ul id="list-meniu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="masini.html">Masini</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Autentificare</a>
+                        <ul>
+                            <li><a href="login.html">Log In</a></li>
+                            <li><a href="cont_nou.html">Cont Nou</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="continut"> 
+                <br/>
+                <form>
+                    <table id="login">
+                        <tr>
+                            <td>
+                                <b>Email:</b>
+                            </td>
+                            <td>
+                                <input id="email" type="text" ></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Password:</b>
+                            </td>
+                            <td>
+                                <input id="password" type="password"></input>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td colspan="2"><a href="cont_nou.html">Nu ai cont? Creează unul acum!</a></td>
+                        </tr>
+                    </table>
+                </form>
+                <button id="loginButton" class="btn btn-primary mb-3">Login</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div id="footer">
+                <a href="http://csac.ulbsibiu.ro/"><img src="images/csac.png" alt="csac"></a>&copy;Bunea Matei 2024 &nbsp;
+            </div>
         </div>
-        <div id="box-meniu">
-            <ul id="list-meniu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="masini.html">Masini</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="autentificare.html">Autentificare</a>
-                    <ul>
-                        <li><a href="login.html">Log In</a></li>
-                        <li><a href="cont_nou.html">Cont Nou</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div id="continut"> 
-            <br/>
-            <form>
-                <table id="login">
-                    <tr>
-                        <td>
-                            <b>Username:</b>
-                        </td>
-                        <td>
-                            <input id="username" type="text" ></input>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>Password:</b>
-                        </td>
-                        <td>
-                            <input id="password" type="password"></input>
-                        </td>
-                    </tr> 
-                    <tr>
-                        <td colspan="2"><a href="cont_nou.html">Nu ai cont? Creează unul acum!</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input id="submit-button" type="button" value="Submit" class="buton">
-                        </td>
-                        <td>
-                            <input type="reset" value="Reset" class="buton"></input>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </div>
-        <div id="footer">
-            <a href="http://csac.ulbsibiu.ro/"><img src="images/csac.png" alt="csac"></a>&copy;Bunea Matei 2024 &nbsp;
-        </div>
-    </div>
-</body>
+
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js" nonce="Matei Bunea"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js" nonce="Matei Bunea"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js" nonce="Matei Bunea"></script>
+        <script src="login.js" nonce="Matei Bunea"></script>
+    </body>
+    
 </html>
