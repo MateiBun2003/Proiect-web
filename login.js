@@ -23,36 +23,76 @@ const firebaseConfig = {
   document.getElementById('loginButton').addEventListener('click', (event) =>{
       login();
   });
+
+  document.getElementById('logout').addEventListener('click', (event) =>{
+    logout();
+  });
+
+  window.onload = function(){
+    auth.onAuthStateChanged((user) => {
+        // Select the elements
+        if(user !== null){
+          username.textContent = "UserName:" + user.email;
+          document.getElementById("masini").style.display = "block"; // Show the element with id "masini"
+          document.getElementById("contact").style.display = "block"; // Show the element with id "masini"
+      }else{
+          username.textContent = "UserName:";
+          document.getElementById("masini").style.display = "none";
+          document.getElementById("contact").style.display = "none";
+        }
+    });
+    
+}
   
 
   function login(){
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
-  
-      if (!validateEmail(email) || !validatePassword(password)) {
-          alert("Email or password is incorrect!");
-          return;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if (!validateEmail(email) || !validatePassword(password)) {
+      alert("Email or password is incorrect!");
+      return;
+    }
+
+    auth.signInWithEmailAndPassword(email, password).then(function(){
+      var user = auth.currentUser;
+      var databaseRef = dataBase.ref();
+
+      var userData = {
+        lastLogin: Date.now()
       }
-  
-      auth.signInWithEmailAndPassword(email, password).then(function(){
-          var user = auth.currentUser;
-          var databaseRef = dataBase.ref();
-  
-          var userData = {
-              lastLogin: Date.now()
-          }
-  
-          databaseRef.child('users/' + user.uid).update(userData);
-  
-          alert('User logged!');
-      })
-      .catch(function (error) {
+
+      databaseRef.child('users/' + user.uid).update(userData);
+      alert('User logged!');
+
+      var username = document.getElementById("username");
+      if (user !== null) {
+        username.textContent = "UserName:" + user.email;
+      }
+    })
+    .catch(function (error) {
+      var errorCode = error.code;   
+      var errorMessage = error.message;
+
+      alert(errorMessage + ' ' + errorCode);
+    });
+  }
+
+  function logout(){
+    auth.signOut().then(() => {
+      // Sign-out successful.
+      var user = auth.currentUser;
+      if (user === null) {
+        username.textContent = "UserName:";
+      }
+      alert('User logged out!');
+    }).catch((error) => {
+      // An error happened.
       var errorCode = error.code;   
       var errorMessage = error.message;
   
       alert(errorMessage + ' ' + errorCode);
-      });
-  
+    });
   }
 
   function validateEmail(email) {
@@ -68,6 +108,7 @@ const firebaseConfig = {
     if (password.length < 6) return false;
     return true;
   }
+
   
   
   

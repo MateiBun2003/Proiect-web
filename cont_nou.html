@@ -16,14 +16,16 @@
             <div id="box-meniu">
                 <ul id="list-meniu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="masini.html">Masini</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="masini.html" id="masini">Masini</a></li>
+                    <li><a href="contact.html" id="contact">Contact</a></li>
                     <li><a href="#">Autentificare</a>
                         <ul>
                             <li><a href="login.html">Login</a></li>
                             <li><a href="cont_nou.html">Cont Nou</a></li>
+                            <li><a href="#" id="logout">Log out</a></li>
                         </ul>   
                     </li>
+                    <li><p id="username"></p>
                 </ul>
             </div>
             <div id="continut"> 
@@ -70,6 +72,7 @@
         <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js" nonce="Matei Bunea"></script>
         <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js" nonce="Matei Bunea"></script>
         <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js" nonce="Matei Bunea"></script>
+        <script src="cont_nou.js" nonce="Matei Bunea"></script>
         <script src="firebaseSetUp.js" nonce="Matei Bunea"></script>
     </body>
 
